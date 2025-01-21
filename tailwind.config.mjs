@@ -7,10 +7,9 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-      },
+      fontFamily: {
+        yekan: ["Yekan", "sans-serif"],
+      }
     },
   },
   plugins: [],

@@ -3,3 +3,7 @@
 @tailwind utilities;
 
 
+@font-face {
+    font-family: "Yekan";
+    src: url("/fonts/YekanBakh-Regular.woff2.");
+}
