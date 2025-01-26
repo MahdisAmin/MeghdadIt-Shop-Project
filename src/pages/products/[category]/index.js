@@ -6,15 +6,16 @@ import { useEffect, useState } from "react";
 function ProductsByCategories() {
   const { category } = useRouter().query;
   const [datas, setDatas] = useState(data[category]);
-  const [searchKey , setSearchKey] = useState(null);
+  const [searchKey , setSearchKey] = useState("");
   
   useEffect(() => { 
     setDatas(data[category]);
-  }, category);
+    setSearchKey("");
+}, [category]);
 
   useEffect(() => { 
-    if(searchKey === null) return setDatas(datas);
-     setDatas(data[category].filter((item) => item.text.includes(searchKey)))
+    if(!searchKey) return setDatas(data[category]);
+     setDatas(data[category].filter((item) => item.text.toLowerCase().includes(searchKey.toLocaleLowerCase())))
   },[searchKey])
 
   return (
@@ -24,6 +25,7 @@ function ProductsByCategories() {
           onChange={(e) => setSearchKey(e.target.value)}
           type="text"
           placeholder="دنبال چی میگردی؟"
+          value={searchKey}
           className="p-1 outline-none rounded-md w-96 border border-gray-400"
         />
       </div>
