@@ -1,17 +1,24 @@
 import { useRouter } from "next/router";
 import data from "../../../../data/db.json";
 import ProductsCards from "@/components/elements/ProductsCards";
+import { useEffect, useState } from "react";
 
 function ProductsByCategories() {
-  // console.log(data);
-  
-  const {category}= useRouter().query
-  
-  const datas = data[category] 
-  console.log(datas)
-
+  const { category } = useRouter().query;
+  const [datas, setDatas] = useState(data[category]);
+ 
+  useEffect(() => { 
+    setDatas(data[category]);
+  }, category);
   return (
     <div>
+      <div className="container m-12 mx-auto text-center">
+        <input
+          type="text"
+          placeholder="دنبال چی میگردی؟"
+          className="p-1 outline-none rounded-md w-96 border border-gray-400"
+        />
+      </div>
       <h4 className="text-center my-5 font-bold text-xl">{category}</h4>
       <div className="container text-center my-12 mx-auto">
         <div className="flex flex-wrap m-4">
