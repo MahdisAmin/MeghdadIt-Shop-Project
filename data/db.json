@@ -150,7 +150,7 @@
       {
          "id": 22,
          "image": "https://dl.next1code.ir/images/nextjs/chapter04/laptop22.jpg",
-         "text": "لپ تاپ ام اس آی 15.6 اینچی مدل Cyborg 15 A12VE پردازنده Core i7-12650H رم 16GB حافظه 1TB SSD",
+         "text": "لپ تاپ دل 15.6 اینچی مدل Cyborg 15 A12VE پردازنده Core i7-12650H رم 16GB حافظه 1TB SSD",
          "price": 73000000,
          "brand": "dell"
       },
@@ -180,7 +180,7 @@
          "image": "https://dl.next1code.ir/images/nextjs/chapter04/laptop26.jpg",
          "text": "لپ تاپ دل 15.6 اینچی مدل Vostro 3510 پردازنده Core i7 1165G7 رم 16GB حافظه 1TB 500GB SSD",
          "price": 49800000,
-         "brand": "apple"
+         "brand": "dell"
       },
       {
          "id": 27,
