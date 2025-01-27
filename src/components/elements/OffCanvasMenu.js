@@ -1,10 +1,11 @@
+import { AppContext } from "@/pages/_app";
 import Link from "next/link";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { MdOutlineClose } from "react-icons/md";
 import { RxCaretDown } from "react-icons/rx";
 
 function OffCanvasMenu() {
-  const [showMenu, setShowMenu] = useState(true);
+  const { showMenu, setShowMenu } = useContext(AppContext);
   if (!showMenu) return null;
   const closeMenu = () => setShowMenu(false);
   return (
