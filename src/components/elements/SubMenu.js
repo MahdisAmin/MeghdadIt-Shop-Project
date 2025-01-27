@@ -1,6 +1,4 @@
 import Link from "next/link";
-import React from "react";
-
 function SubMenu() {
   return (
     <div className=" bg-white border border-gray-100 absolute w-full left-0 right-0 mt-[85px] shadow-sm shadow-gray-400">
@@ -32,7 +30,7 @@ function SubMenu() {
           </li>
           <li className="flex items-center px-4">
             <Link
-              href="/products/laptops/del"
+              href="/products/laptops/dell"
               className="text-gray-800 text-sm hover:text-gray-950 hover:font-bold"
             >
               دل
@@ -44,6 +42,22 @@ function SubMenu() {
               className="text-gray-800 text-sm hover:text-gray-950 hover:font-bold"
             >
               ایسوس
+            </Link>
+          </li>
+          <li className="flex items-center px-4">
+            <Link
+              href="/products/laptops/msi"
+              className="text-gray-800 text-sm hover:text-gray-950 hover:font-bold"
+            >
+              ام اس آی
+            </Link>
+          </li>
+          <li className="flex items-center px-4">
+            <Link
+              href="/products/laptops/microsoft"
+              className="text-gray-800 text-sm hover:text-gray-950 hover:font-bold"
+            >
+              مایکروسافت
             </Link>
           </li>
         </ul>
