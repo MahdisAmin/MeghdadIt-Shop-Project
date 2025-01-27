@@ -10,7 +10,7 @@ function ProductsCards({ image, text, price }) {
         <p className="text-sm text-gray-800 py-0 pr-[15px] pl-[20px]">{text}</p>
       </div>
       <div className="border-t border-t-gray-400 flex justify-between items-center  px-[4px]">
-        <button className=" bg-orange-400 rounded-xl font-bold text-sm p-1 cursor-pointer hover:bg-orange-500 ">
+        <button className=" bg-orange-400 rounded-xl text-sm p-1 cursor-pointer hover:bg-orange-500 ">
           افزودن به سبد خرید
         </button>
         <p className="text-sm text-gray-800 p-3">{price}</p>
