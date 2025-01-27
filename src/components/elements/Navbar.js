@@ -1,13 +1,15 @@
+import { AppContext } from "@/pages/_app";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useContext } from "react";
 
 function Navbar() {
+  const { showMenu, setShowMenu } = useContext(AppContext);
   return (
     <div className="bg-white border-b border-b-gray-100">
       <div className="container mx-auto">
         <ul className="flex items-center p-5">
-          <li className="md:hidden">
+          <li className="md:hidden" onClick={() => setShowMenu(true)}>
             <Image
               src="/images/svgs/menu.svg"
               width={20}
